@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Smashle</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <style>
+        body{
+            background-image: url("images.jpg");
+            background-size: cover;
+            font-family: 'Comic Sans MS';
+        }
+
+        h1{
+            color: red;
+        }
+
+        h3{
+            color: greenyellow;
+        }
+
+        td{
+            color: fuchsia;
+        }
+        table{
+            background-color: black;
+        }
+    </style>
+    <body>
+        <h1>Smashle</h1>
+        <h3>
+            A game inspired by wordle for competitive Smash Bros. Players
+        </h3>
+
+        <tableid="resultsTable">
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+            
+        <form id="mainForm">
+            <div class="mb-3">
+                <label for="tbxCharacter">Character</label>
+                <input type="text" id="tbxCharacter">
+            <div>Guess your character here</div>
+            </div>
+            <button type="button" id="submit" onclick="submitButton()">Submit</button>
+            <button type="button" id="clear" onclick="clearButton()">Clear</button>
+        </form>
+        
+        <script src="./app.js"></script>
+    </body>
+</html>
+

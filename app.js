@@ -9,7 +9,6 @@ let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
 var guessedChar;
 var counter = 0;
-console.log(randChar)
 
 // Makes it easier to compare strings
 for (let i=0; i < characters.length; i++){
@@ -30,7 +29,7 @@ function submitButton(){
     var flag = false;
     for (let i=0; i < characters.length; i++){
         var char = characters[i];
-        if (textbox.value == char.Name){
+        if (textbox.value == char.Name || char.aliases.includes(textbox.value)){
             guessedChar = char;
             flag = true;
         }
@@ -49,7 +48,7 @@ function submitButton(){
     if (counter == 5){
     
         textbox.disabled = true;
-        document.getElementById("errors").innerText = "You Lost";
+        document.getElementById("errors").innerText = "You Lost. The character was " + randChar.Name;
         alert("The character was: " + randChar.Name + ". Try again by refreshing the page.");
     }
 }
@@ -96,11 +95,6 @@ function newRow(character){
         document.getElementById("errors").innerText = "You Won!";
         alert("The character was: " + guessedChar.Name + ". You won!");
     }
-}
-
-function clearButton(){
-    console.log("hey")
-    document.getElementById("tableBody").innerHTML = '';
 }
 
 function TierCheck(guessedChar) {

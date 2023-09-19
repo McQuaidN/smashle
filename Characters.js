@@ -8,7 +8,8 @@ export const characters =
       "RunSpeed": 2.18,
       "OOSSpeed": 9,
       "FirstGame": 5,
-      "aliases": ["Banjo And Kazooie"]
+      "aliases": ["Banjo And Kazooie"],
+      "image": "<img src=\"./images/banjo.png\"/>"
     },
     {
       "Name": "Bayonetta",
@@ -18,7 +19,8 @@ export const characters =
       "RunSpeed": 1.76,
       "OOSSpeed": 6,
       "FirstGame": 4,
-      "aliases": ["Bayo", "bullshit"]
+      "aliases": ["Bayo", "bullshit"],
+      "image": "<img src='./images/bayonetta.png'/>"
     },
     {
       "Name": "Bowser",
@@ -28,7 +30,8 @@ export const characters =
       "RunSpeed": 1.971,
       "OOSSpeed": 6,
       "FirstGame": 2,
-      "aliases":[]
+      "aliases": [],
+      "image": "<img src='./images/bowser.png'/>"
     },
     {
       "Name": "Bowser Jr.",
@@ -38,7 +41,8 @@ export const characters =
       "RunSpeed": 1.566,
       "OOSSpeed": 7,
       "FirstGame": 4,
-      "aliases": ["Jr", "bowser jr", "lemmy", "morton", "wendy", "iggy", "ludwig"]
+      "aliases": ["Jr", "bowser jr", "lemmy", "morton", "wendy", "iggy", "ludwig"],
+      "image": "<img src='./images/bowserjr.png'/>"
     },
     {
       "Name": "Byleth",
@@ -48,7 +52,8 @@ export const characters =
       "RunSpeed": 1.43,
       "OOSSpeed": 9,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/byleth.png'/>"
     },
     {
       "Name": "Captain Falcon",
@@ -58,7 +63,8 @@ export const characters =
       "RunSpeed": 2.552,
       "OOSSpeed": 10,
       "FirstGame": 1,
-      "aliases": ["cpt falcon", "falcon"]
+      "aliases": ["cpt falcon", "falcon"],
+      "image": "<img src='./images/falcon.png'/>"
     },
     {
       "Name": "Charizard",
@@ -68,7 +74,8 @@ export const characters =
       "RunSpeed": 2.2,
       "OOSSpeed": 6,
       "FirstGame": 3,
-      "aliases": ["zard", "charzard"]
+      "aliases": ["zard", "charzard"],
+      "image": "<img src='./images/charizard.png'/>"
     },
     {
       "Name": "Chrom",
@@ -78,7 +85,8 @@ export const characters =
       "RunSpeed": 2.145,
       "OOSSpeed": 8,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/chrom.png'/>"
     },
     {
       "Name": "Cloud",
@@ -88,7 +96,8 @@ export const characters =
       "RunSpeed": 2.167,
       "OOSSpeed": 7,
       "FirstGame": 4,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/cloud.png'/>"
     },
     {
       "Name": "Corrin",
@@ -98,7 +107,8 @@ export const characters =
       "RunSpeed": 1.595,
       "OOSSpeed": 9,
       "FirstGame": 4,
-      "aliases": ["corn"]
+      "aliases": ["corn"],
+      "image": "<img src='./images/corrin.png'/>"
     },
     {
       "Name": "Daisy",
@@ -108,7 +118,8 @@ export const characters =
       "RunSpeed": 1.595,
       "OOSSpeed": 7,
       "FirstGame": 5,
-      "aliases": ["HI IM DAISY"]
+      "aliases": ["HI IM DAISY"],
+      "image": "<img src='./images/daisy.png'/>"
     },
     {
       "Name": "Dark Pit",
@@ -118,7 +129,8 @@ export const characters =
       "RunSpeed": 1.828,
       "OOSSpeed": 6,
       "FirstGame": 4,
-      "aliases": ["dpit"]
+      "aliases": ["dpit"],
+      "image": "<img src='./images/darkpit.png'/>"
     },
     {
       "Name": "Diddy Kong",
@@ -128,7 +140,8 @@ export const characters =
       "RunSpeed": 2.006,
       "OOSSpeed": 5,
       "FirstGame": 3,
-      "aliases": ["diddy"]
+      "aliases": ["diddy"],
+      "image": "<img src='./images/diddy.png'/>"
     },
     {
       "Name": "Donkey Kong",
@@ -138,7 +151,8 @@ export const characters =
       "RunSpeed": 1.873,
       "OOSSpeed": 7,
       "FirstGame": 1,
-      "aliases": ["dk"]
+      "aliases": ["dk"],
+      "image": "<img src='./images/dk.png'/>"
     },
     {
       "Name": "Dr. Mario",
@@ -148,7 +162,8 @@ export const characters =
       "RunSpeed": 1.397792,
       "OOSSpeed": 3,
       "FirstGame": 2,
-      "aliases": ["dr mario", "drmario", "dmario"]
+      "aliases": ["dr mario", "drmario", "dmario"],
+      "image": "<img src='./images/drmario.png'/>"
     },
     {
       "Name": "Duck Hunt",
@@ -158,7 +173,8 @@ export const characters =
       "RunSpeed": 1.793,
       "OOSSpeed": 9,
       "FirstGame": 4,
-      "aliases": ["jmon", "bigduckhuntfan7000"]
+      "aliases": ["jmon", "bigduckhuntfan7000"],
+      "image": "<img src='./images/duckhunt.png'/>"
     },
     {
       "Name": "Falco",
@@ -168,7 +184,8 @@ export const characters =
       "RunSpeed": 1.619,
       "OOSSpeed": 6,
       "FirstGame": 2,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/falco.png'/>"
     },
     {
       "Name": "Fox",
@@ -178,7 +195,8 @@ export const characters =
       "RunSpeed": 2.402,
       "OOSSpeed": 6,
       "FirstGame": 1,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/fox.png'/>"
     },
     {
       "Name": "Ganondorf",
@@ -188,7 +206,8 @@ export const characters =
       "RunSpeed": 1.34,
       "OOSSpeed": 10,
       "FirstGame": 2,
-      "aliases": ["ganon"]
+      "aliases": ["ganon"],
+      "image": "<img src='./images/ganon.png'/>"
     },
     {
       "Name": "Greninja",
@@ -198,7 +217,8 @@ export const characters =
       "RunSpeed": 2.288,
       "OOSSpeed": 8,
       "FirstGame": 4,
-      "aliases": ["gren"]
+      "aliases": ["gren"],
+      "image": "<img src='./images/greninja.png'/>"
     },
     {
       "Name": "Hero",
@@ -208,7 +228,8 @@ export const characters =
       "RunSpeed": 1.84,
       "OOSSpeed": 7,
       "FirstGame": 5,
-      "aliases": ["thorn", "brave"]
+      "aliases": ["thorn", "brave"],
+      "image": "<img src='./images/hero.png'/>"
     },
     {
       "Name": "Ice Climbers",
@@ -218,7 +239,8 @@ export const characters =
       "RunSpeed": 1.53,
       "OOSSpeed": 9,
       "FirstGame": 2,
-      "aliases": ["ics", "icies", "climbers", "juansolo", "worms", "big d"]
+      "aliases": ["ics", "icies", "climbers", "juansolo", "worms", "big d"],
+      "image": "<img src='./images/icies.png'/>"
     },
     {
       "Name": "Ike",
@@ -228,7 +250,8 @@ export const characters =
       "RunSpeed": 1.507,
       "OOSSpeed": 10,
       "FirstGame": 3,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/ike.png'/>"
     },
     {
       "Name": "Incineroar",
@@ -238,7 +261,8 @@ export const characters =
       "RunSpeed": 1.18,
       "OOSSpeed": 8,
       "FirstGame": 5,
-      "aliases": ["incin", "incinaroar", "incinoroar"]
+      "aliases": ["incin", "incinaroar", "incinoroar"],
+      "image": "<img src='./images/incineroar.png'/>"
     },
     {
       "Name": "Inkling",
@@ -248,7 +272,8 @@ export const characters =
       "RunSpeed": 1.925,
       "OOSSpeed": 9,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/inkling.png'/>"
     },
     {
       "Name": "Isabelle",
@@ -258,7 +283,8 @@ export const characters =
       "RunSpeed": 1.48,
       "OOSSpeed": 8,
       "FirstGame": 5,
-      "aliases": ["izzy", "izziibell"]
+      "aliases": ["izzy", "izziibell"],
+      "image": "<img src='./images/isabelle.png'/>"
     },
     {
       "Name": "Ivysaur",
@@ -268,7 +294,8 @@ export const characters =
       "RunSpeed": 1.595,
       "OOSSpeed": 10,
       "FirstGame": 3,
-      "aliases": ["ivy", "venasaur", "bulbasaur", "cabbage patch bitch"]
+      "aliases": ["ivy", "venasaur", "bulbasaur", "cabbage patch bitch"],
+      "image": "<img src='./images/ivysaur.png'/>"
     },
     {
       "Name": "Jigglypuff",
@@ -278,7 +305,8 @@ export const characters =
       "RunSpeed": 1.271,
       "OOSSpeed": 5,
       "FirstGame": 1,
-      "aliases": ["puff", "jiggly", "hbox", "young mango"]
+      "aliases": ["puff", "jiggly", "hbox", "young mango"],
+      "image": "<img src='./images/jigglypuff.png'/>"
     },
     {
       "Name": "Joker",
@@ -288,7 +316,8 @@ export const characters =
       "RunSpeed": 2.06,
       "OOSSpeed": 8,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/joker.png'/>"
     },
     {
       "Name": "Kazuya",
@@ -298,7 +327,8 @@ export const characters =
       "RunSpeed": 1.55,
       "OOSSpeed": 11,
       "FirstGame": 5,
-      "aliases": ["kaz", "mishima"]
+      "aliases": ["kaz", "mishima"],
+      "image": "<img src='./images/kazuya.png'/>"
     },
     {
       "Name": "Ken",
@@ -308,7 +338,8 @@ export const characters =
       "RunSpeed": 1.76,
       "OOSSpeed": 5,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/ken.png'/>"
     },
     {
       "Name": "King Dedede",
@@ -318,7 +349,8 @@ export const characters =
       "RunSpeed": 1.496,
       "OOSSpeed": 10,
       "FirstGame": 3,
-      "aliases": ["dedede", "d3", "king daddledingo", "roi dadidou"]
+      "aliases": ["dedede", "d3", "king daddledingo", "roi dadidou"],
+      "image": "<img src='./images/dedede.png'/>"
     },
     {
       "Name": "K Rool",
@@ -328,7 +360,8 @@ export const characters =
       "RunSpeed": 1.485,
       "OOSSpeed": 6,
       "FirstGame": 5,
-      "aliases": ["krool", "krule", "k rule", "king k rool", "king krool"]
+      "aliases": ["krool", "krule", "k rule", "king k rool", "king krool"],
+      "image": "<img src='./images/krool.png'/>"
     },
     {
       "Name": "Kirby",
@@ -338,7 +371,8 @@ export const characters =
       "RunSpeed": 1.727,
       "OOSSpeed": 9,
       "FirstGame": 1,
-      "aliases": ["kirb", "koiby"]
+      "aliases": ["kirb", "koiby"],
+      "image": "<img src='./images/kirby.png'/>"
     },
     {
       "Name": "Link",
@@ -348,7 +382,8 @@ export const characters =
       "RunSpeed": 1.534,
       "OOSSpeed": 7,
       "FirstGame": 1,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/link.png'/>"
     },
     {
       "Name": "Little Mac",
@@ -358,7 +393,8 @@ export const characters =
       "RunSpeed": 2.464,
       "OOSSpeed": 3,
       "FirstGame": 4,
-      "aliases": ["mac", "lil mac"]
+      "aliases": ["mac", "lil mac"],
+      "image": "<img src='./images/littlemac.png'/>"
     },
     {
       "Name": "Lucario",
@@ -368,7 +404,8 @@ export const characters =
       "RunSpeed": 1.705,
       "OOSSpeed": 7,
       "FirstGame": 3,
-      "aliases": ["mario wario"]
+      "aliases": ["mario wario"],
+      "image": "<img src='./images/lucario.png'/>"
     },
     {
       "Name": "Lucas",
@@ -378,7 +415,8 @@ export const characters =
       "RunSpeed": 1.65,
       "OOSSpeed": 10,
       "FirstGame": 3,
-      "aliases": [""]
+      "aliases": [],
+      "image": "<img src='./images/lucas.png'/>"
     },
     {
       "Name": "Lucina",
@@ -388,7 +426,8 @@ export const characters =
       "RunSpeed": 1.964,
       "OOSSpeed": 5,
       "FirstGame": 4,
-      "aliases": ["lucy"]
+      "aliases": ["lucy"],
+      "image": "<img src='./images/lucina.png'/>"
     },
     {
       "Name": "Luigi",
@@ -398,7 +437,8 @@ export const characters =
       "RunSpeed": 1.65,
       "OOSSpeed": 6,
       "FirstGame": 1,
-      "aliases": ["loogi", "landon"]
+      "aliases": ["loogi", "landon"],
+      "image": "<img src='./images/luigi.png'/>"
     },
     {
       "Name": "Mario",
@@ -408,7 +448,8 @@ export const characters =
       "RunSpeed": 1.76,
       "OOSSpeed": 3,
       "FirstGame": 1,
-      "aliases": ["anai"]
+      "aliases": ["anai"],
+      "image": "<img src='./images/mario.png'/>"
     },
     {
       "Name": "Marth",
@@ -418,7 +459,8 @@ export const characters =
       "RunSpeed": 1.964,
       "OOSSpeed": 5,
       "FirstGame": 2,
-      "aliases": ["marf"]
+      "aliases": ["marf"],
+      "image": "<img src='./images/marth.png'/>"
     },
     {
       "Name": "Mega Man",
@@ -428,7 +470,8 @@ export const characters =
       "RunSpeed": 1.602,
       "OOSSpeed": 7,
       "FirstGame": 4,
-      "aliases": ["mman", "megaman", "rockman"]
+      "aliases": ["mman", "megaman", "rockman"],
+      "image": "<img src='./images/megaman.png'/>"
     },
     {
       "Name": "Meta Knight",
@@ -438,7 +481,8 @@ export const characters =
       "RunSpeed": 2.09,
       "OOSSpeed": 7,
       "FirstGame": 3,
-      "aliases": ["mk", "metaknight"]
+      "aliases": ["mk", "metaknight"],
+      "image": "<img src='./images/metaknight.png'/>"
     },
     {
       "Name": "Mewtwo",
@@ -448,7 +492,8 @@ export const characters =
       "RunSpeed": 2.255,
       "OOSSpeed": 9,
       "FirstGame": 2,
-      "aliases": ["yung leff", "m2", "mew2"]
+      "aliases": ["yung leff", "m2", "mew2"],
+      "image": "<img src='./images/mewtwo.png'/>"
     },
     {
       "Name": "Mii Brawler",
@@ -458,7 +503,8 @@ export const characters =
       "RunSpeed": 1.92,
       "OOSSpeed": 3,
       "FirstGame": 4,
-      "aliases": ["brawler", "fighter"]
+      "aliases": ["brawler", "fighter"],
+      "image": "<img src='./images/miibrawler.png'/>"
     },
     {
       "Name": "Mii Gunner",
@@ -468,7 +514,8 @@ export const characters =
       "RunSpeed": 1.37,
       "OOSSpeed": 6,
       "FirstGame": 4,
-      "aliases": ["gunner"]
+      "aliases": ["gunner"],
+      "image": "<img src='./images/miigunner.png'/>"
     },
     {
       "Name": "Mii Swordfighter",
@@ -478,7 +525,8 @@ export const characters =
       "RunSpeed": 1.58,
       "OOSSpeed": 8,
       "FirstGame": 4,
-      "aliases": ["swordie", "nicksf", "goatsf", "swordfighter"]
+      "aliases": ["swordie", "nicksf", "goatsf", "swordfighter"],
+      "image": "<img src='./images/miiswordfighter.png'/>"
     },
     {
       "Name": "Min Min",
@@ -488,7 +536,8 @@ export const characters =
       "RunSpeed": 1.55,
       "OOSSpeed": 7,
       "FirstGame": 5,
-      "aliases": ["minmin", "noodle bitch"]
+      "aliases": ["minmin", "noodle bitch"],
+      "image": "<img src='./images/minmin.png'/>"
     },
     {
       "Name": "Mr. Game & Watch",
@@ -498,7 +547,8 @@ export const characters =
       "RunSpeed": 1.679,
       "OOSSpeed": 3,
       "FirstGame": 2,
-      "aliases": ["gnw", "game and watch", "game n watch", "mr game and watch", "mr game & watch", "g&w"]
+      "aliases": ["gnw", "game and watch", "game n watch", "mr game and watch", "mr game & watch", "g&w"],
+      "image": "<img src='./images/gnw.png'/>"
     },
     {
       "Name": "Mythra",
@@ -508,7 +558,8 @@ export const characters =
       "RunSpeed": 2.41,
       "OOSSpeed": 9,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/mythra.png'/>"
     },
     {
       "Name": "Ness",
@@ -518,7 +569,8 @@ export const characters =
       "RunSpeed": 1.609,
       "OOSSpeed": 8,
       "FirstGame": 1,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/ness.png'/>"
     },
     {
       "Name": "Olimar",
@@ -528,7 +580,8 @@ export const characters =
       "RunSpeed": 1.617,
       "OOSSpeed": 10,
       "FirstGame": 3,
-      "aliases": ["oli", "pikmin", "olimar and pikmin", "alph", "louie"]
+      "aliases": ["oli", "pikmin", "olimar and pikmin", "alph", "louie"],
+      "image": "<img src='./images/olimar.png'/>"
     },
     {
       "Name": "Pac-Man",
@@ -538,7 +591,8 @@ export const characters =
       "RunSpeed": 1.672,
       "OOSSpeed": 4,
       "FirstGame": 4,
-      "aliases": ["pac man", "pacman", "fuck man"]
+      "aliases": ["pac man", "pacman", "fuck man"],
+      "image": "<img src='./images/pacman.png'/>"
     },
     {
       "Name": "Palutena",
@@ -548,7 +602,8 @@ export const characters =
       "RunSpeed": 2.077,
       "OOSSpeed": 8,
       "FirstGame": 4,
-      "aliases": ["palu"]
+      "aliases": ["palu"],
+      "image": "<img src='./images/palutena.png'/>"
     },
     {
       "Name": "Peach",
@@ -558,7 +613,8 @@ export const characters =
       "RunSpeed": 1.595,
       "OOSSpeed": 7,
       "FirstGame": 2,
-      "aliases": ["princess peach", "toadstool", "princess toadstool"]
+      "aliases": ["princess peach", "toadstool", "princess toadstool"],
+      "image": "<img src='./images/peach.png'/>"
     },
     {
       "Name": "Pichu",
@@ -568,7 +624,8 @@ export const characters =
       "RunSpeed": 1.892,
       "OOSSpeed": 6,
       "FirstGame": 2,
-      "aliases": ["pchu"]
+      "aliases": ["pchu"],
+      "image": "<img src='./images/pichu.png'/>"
     },
     {
       "Name": "Pikachu",
@@ -578,7 +635,8 @@ export const characters =
       "RunSpeed": 2.039,
       "OOSSpeed": 6,
       "FirstGame": 1,
-      "aliases": ["pika", "rat"]
+      "aliases": ["pika", "rat"],
+      "image": "<img src='./images/pikachu.png'/>"
     },
     {
       "Name": "Piranha Plant",
@@ -588,7 +646,8 @@ export const characters =
       "RunSpeed": 1.72,
       "OOSSpeed": 10,
       "FirstGame": 5,
-      "aliases": ["plant", "petey", "pirana plant", "pirahna plant", "petey piranha", "petey pirahna"]
+      "aliases": ["plant", "petey", "pirana plant", "pirahna plant", "petey piranha", "petey pirahna"],
+      "image": "<img src='./images/plant.png'/>"
     },
     {
       "Name": "Pit",
@@ -598,7 +657,8 @@ export const characters =
       "RunSpeed": 1.828,
       "OOSSpeed": 6,
       "FirstGame": 3,
-      "aliases": ["HIYAYAYAYA"]
+      "aliases": ["HIYAYAYAYA"],
+      "image": "<img src='./images/pit.png'/>"
     },
     {
       "Name": "Pyra",
@@ -608,7 +668,8 @@ export const characters =
       "RunSpeed": 1.69,
       "OOSSpeed": 13,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/pyra.png'/>"
     },
     {
       "Name": "R.O.B.",
@@ -618,7 +679,8 @@ export const characters =
       "RunSpeed": 1.725,
       "OOSSpeed": 9,
       "FirstGame": 3,
-      "aliases": ["rob", "r o b", "robert", "r.o.b"]
+      "aliases": ["rob", "r o b", "robert", "r.o.b"],
+      "image": "<img src='./images/rob.png'/>"
     },
     {
       "Name": "Ridley",
@@ -628,7 +690,8 @@ export const characters =
       "RunSpeed": 2.2,
       "OOSSpeed": 11,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/ridley.png'/>"
     },
     {
       "Name": "Robin",
@@ -638,7 +701,8 @@ export const characters =
       "RunSpeed": 1.265,
       "OOSSpeed": 8,
       "FirstGame": 4,
-      "aliases": ["reflet"]   
+      "aliases": ["reflet"],
+      "image": "<img src='./images/robin.png'/>"   
     },
     {
       "Name": "Rosalina & Luma",
@@ -648,7 +712,8 @@ export const characters =
       "RunSpeed": 1.795,
       "OOSSpeed": 8,
       "FirstGame": 4,
-      "aliases": ["rosalina", "rosa", "rosaluma", "rosalina and luma"]
+      "aliases": ["rosalina", "rosa", "rosaluma", "rosalina and luma"],
+      "image": "<img src='./images/rosalina.png'/>"
     },
     {
       "Name": "Roy",
@@ -658,7 +723,8 @@ export const characters =
       "RunSpeed": 2.145,
       "OOSSpeed": 8,
       "FirstGame": 2,
-      "aliases": ["our boy"]
+      "aliases": ["our boy"],
+      "image": "<img src='./images/roy.png'/>"
     },
     {
       "Name": "Ryu",
@@ -668,7 +734,8 @@ export const characters =
       "RunSpeed": 1.6,
       "OOSSpeed": 6,
       "FirstGame": 4,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/Ryu.png'/>"
     },
     {
       "Name": "Samus",
@@ -678,7 +745,8 @@ export const characters =
       "RunSpeed": 1.654,
       "OOSSpeed": 4,
       "FirstGame": 1,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/samus.png'/>"
     },
     {
       "Name": "Dark Samus",
@@ -688,7 +756,8 @@ export const characters =
       "RunSpeed": 1.654,
       "OOSSpeed": 4,
       "FirstGame": 5,
-      "aliases": ["dsamus", "darksamus"]
+      "aliases": ["dsamus", "darksamus"],
+      "image": "<img src='./images/darksamus.png'/>"
     },
     {
       "Name": "Sephiroth",
@@ -698,7 +767,8 @@ export const characters =
       "RunSpeed": 1.86,
       "OOSSpeed": 12,
       "FirstGame": 5,
-      "aliases": ["seph", "sep", "sepiroth", "sephirothken", "sefiroth"]
+      "aliases": ["seph", "sep", "sepiroth", "sephirothken", "sefiroth"],
+      "image": "<img src='./images/sephiroth.png'/>"
     },
     {
       "Name": "Sheik",
@@ -708,7 +778,8 @@ export const characters =
       "RunSpeed": 2.42,
       "OOSSpeed": 6,
       "FirstGame": 2,
-      "aliases": ["shiek"]
+      "aliases": ["shiek"],
+      "image": "<img src='./images/sheik.png'/>"
     },
     {
       "Name": "Shulk",
@@ -718,7 +789,8 @@ export const characters =
       "RunSpeed": 1.672,
       "OOSSpeed": 10,
       "FirstGame": 4,
-      "aliases": ["elijmin"]
+      "aliases": ["elijmin"],
+      "image": "<img src='./images/shulk.png'/>"
     },
     {
       "Name": "Simon",
@@ -728,7 +800,8 @@ export const characters =
       "RunSpeed": 1.52,
       "OOSSpeed": 6,
       "FirstGame": 5,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/simon.png'/>"
     },
     {
       "Name": "Richter",
@@ -738,7 +811,8 @@ export const characters =
       "RunSpeed": 1.52,
       "OOSSpeed": 6,
       "FirstGame": 5,
-      "aliases": ["rickter"]
+      "aliases": ["rickter"],
+      "image": "<img src='./images/richter.png'/>"
     },
     {
       "Name": "Snake",
@@ -748,7 +822,8 @@ export const characters =
       "RunSpeed": 1.595,
       "OOSSpeed": 6,
       "FirstGame": 3,
-      "aliases": ["sorry", "aden", "grape", "apollokage"]
+      "aliases": ["sorry", "aden", "grape", "apollokage"],
+      "image": "<img src='./images/snake.png'/>"
     },
     {
       "Name": "Sonic",
@@ -758,7 +833,8 @@ export const characters =
       "RunSpeed": 3.85,
       "OOSSpeed": 8,
       "FirstGame": 3,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/sonic.png'/>"
     },
     {
       "Name": "Sora",
@@ -768,7 +844,8 @@ export const characters =
       "RunSpeed": 1.58,
       "OOSSpeed": 9,
       "FirstGame": 5,
-      "aliases": ["mickey"]
+      "aliases": ["mickey"],
+      "image": "<img src='./images/sora.png'/>"
     },
     {
       "Name": "Squirtle",
@@ -778,7 +855,8 @@ export const characters =
       "RunSpeed": 1.76,
       "OOSSpeed": 7,
       "FirstGame": 3,
-      "aliases": ["squirdle"]
+      "aliases": ["squirdle"],
+      "image": "<img src='./images/squirtle.png'/>"
     },
     {
       "Name": "Steve",
@@ -788,7 +866,8 @@ export const characters =
       "RunSpeed": 1.45,
       "OOSSpeed": 7,
       "FirstGame": 5,
-      "aliases": ["alex", "minecraft", "minecraft man", "enderman", "zombie"]
+      "aliases": ["alex", "minecraft", "minecraft man", "enderman", "zombie"],
+      "image": "<img src='./images/steve.png'/>"
     },
     {
       "Name": "Terry",
@@ -798,7 +877,8 @@ export const characters =
       "RunSpeed": 1.72,
       "OOSSpeed": 7,
       "FirstGame": 5,
-      "aliases": ["bogard", "terry bogard"]
+      "aliases": ["bogard", "terry bogard"],
+      "image": "<img src='./images/terry.png'/>"
     },
     {
       "Name": "Toon Link",
@@ -808,7 +888,8 @@ export const characters =
       "RunSpeed": 1.906,
       "OOSSpeed": 6,
       "FirstGame": 3,
-      "aliases": ["tlink", "tink", "toonlink"]
+      "aliases": ["tlink", "tink", "toonlink"],
+      "image": "<img src='./images/toonlink.png'/>"
     },
     {
       "Name": "Villager",
@@ -818,7 +899,8 @@ export const characters =
       "RunSpeed": 1.397,
       "OOSSpeed": 6,
       "FirstGame": 4,
-      "aliases": ["villy", "habitant", "killager", "chillager"]
+      "aliases": ["villy", "habitant", "killager", "chillager"],
+      "image": "<img src='./images/villager.png'/>"
     },
     {
       "Name": "Wario",
@@ -828,7 +910,8 @@ export const characters =
       "RunSpeed": 1.65,
       "OOSSpeed": 6,
       "FirstGame": 3,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/wario.png'/>"
     },
     {
       "Name": "Wii Fit Trainer",
@@ -838,7 +921,8 @@ export const characters =
       "RunSpeed": 1.866,
       "OOSSpeed": 5,
       "FirstGame": 4,
-      "aliases": ["wft", "wii fit"]
+      "aliases": ["wft", "wii fit"],
+      "image": "<img src='./images/wiifit.png'/>"
     },
     {
       "Name": "Wolf",
@@ -848,7 +932,8 @@ export const characters =
       "RunSpeed": 1.54,
       "OOSSpeed": 10,
       "FirstGame": 3,
-      "aliases": ["wolf o'donnel", "wolf odonnel"]
+      "aliases": ["wolf o'donnel", "wolf odonnel"],
+      "image": "<img src='./images/wolf.png'/>"
     },
     {
       "Name": "Yoshi",
@@ -858,7 +943,8 @@ export const characters =
       "RunSpeed": 2.046,
       "OOSSpeed": 6,
       "FirstGame": 1,
-      "aliases": []
+      "aliases": [],
+      "image": "<img src='./images/yoshi.png'/>"
     },
     {
       "Name": "Young Link",
@@ -868,7 +954,8 @@ export const characters =
       "RunSpeed": 1.749,
       "OOSSpeed": 7,
       "FirstGame": 2,
-      "aliases": ["yink", "ylink", "younglink", "yung link"]
+      "aliases": ["yink", "ylink", "younglink", "yung link"],
+      "image": "<img src='./images/younglink.png'/>"
     },
     {
       "Name": "Zelda",
@@ -878,7 +965,8 @@ export const characters =
       "RunSpeed": 1.43,
       "OOSSpeed": 6,
       "FirstGame": 2,
-      "aliases": ["zorldo"]
+      "aliases": ["zorldo"],
+      "image": "<img src='./images/zelda.png'/>"
     },
     {
       "Name": "Zero Suit Samus",
@@ -888,6 +976,7 @@ export const characters =
       "RunSpeed": 2.31,
       "OOSSpeed": 6,
       "FirstGame": 3,
-      "aliases": ["zss", "zero suit"]
+      "aliases": ["zss", "zero suit"],
+      "image": "<img src='./images/zss.png'/>"
     }
    ];

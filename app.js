@@ -65,14 +65,34 @@ function newRow(character){
     let weightCell = document.createElement("td");
     let runSpeedCell = document.createElement("td");
     let oosSpeedCell = document.createElement("td");
+    let firstGameCell = document.createElement("td");
 
     // Fills those cells
     nameCell.innerText = character.Name;
     tierCell.innerText = TierCheck(character);
+    if (TierCheck(character) == "equal"){
+        tierCell.style.backgroundColor = "green";
+    }
     fallSpeedCell.innerText = FallSpeedCheck(character);
+    if (FallSpeedCheck(character) == "equal"){
+        fallSpeedCell.style.backgroundColor = "green";
+    }
     weightCell.innerText = WeightCheck(character);
+    if (WeightCheck(character) == "equal"){
+        weightCell.style.backgroundColor = "green";
+    }
     runSpeedCell.innerText = RunSpeedCheck(character);
+    if (RunSpeedCheck(character) == "equal"){
+        runSpeedCell.style.backgroundColor = "green";
+    }
     oosSpeedCell.innerText = OOSSpeedCheck(character);
+    if (OOSSpeedCheck(character) == "equal"){
+        oosSpeedCell.style.backgroundColor = "green";
+    }
+    firstGameCell.innerText = FirstGameCheck(character);
+    if (FirstGameCheck(character) == "equal"){
+        firstGameCell.style.background = "green";
+    }
 
     // adds cells to rows
     row.appendChild(nameCell);
@@ -81,6 +101,7 @@ function newRow(character){
     row.appendChild(weightCell);
     row.appendChild(runSpeedCell);
     row.appendChild(oosSpeedCell);
+    row.appendChild(firstGameCell);
     table.appendChild(row);
 
     if (guessedChar === randChar){
@@ -94,55 +115,66 @@ function newRow(character){
         textbox.disabled = true;
         document.getElementById("errors").innerText = "You Won!";
         alert("The character was: " + guessedChar.Name + ". You won!");
+        form.removeEventListener('submit');
     }
 }
 
 function TierCheck(guessedChar) {
     if (guessedChar.Tier > randChar.Tier) {
-        return "^";
+        return "Higher";
     } else if (guessedChar.Tier < randChar.Tier) {
-        return "v";
+        return "Lower";
     } else if (guessedChar.Tier === randChar.Tier) {
-        return "=";
+        return "equal";
     }
 }
 
 function FallSpeedCheck(guessedChar) {
     if (guessedChar.FallSpeed > randChar.FallSpeed) {
-        return "^"; // Slower Fall Speed
+        return "Slower"; // Slower Fall Speed
     } else if (guessedChar.FallSpeed < randChar.FallSpeed) {
-        return "v"; // Faster Fall Speed
+        return "Faster"; // Faster Fall Speed
     } else if (guessedChar.FallSpeed === randChar.FallSpeed) {
-        return "="; // Same Fall Speed
+        return "equal"; // Same Fall Speed
     }
 }
 
 function WeightCheck(guessedChar) {
     if (guessedChar.Weight > randChar.Weight) {
-        return "^"; // Lighter
+        return "Lighter"; // Lighter
     } else if (guessedChar.Weight < randChar.Weight) {
-        return "v"; // Heavier
+        return "Heavier"; // Heavier
     } else if (guessedChar.Weight === randChar.Weight) {
-        return "="; // Same Weight
+        return "equal"; // Same Weight
     }
 }
 
 function RunSpeedCheck(guessedChar) {
     if (guessedChar.RunSpeed > randChar.RunSpeed) {
-        return "^"; // Slower Run Speed
+        return "Slower"; // Slower Run Speed
     } else if (guessedChar.RunSpeed < randChar.RunSpeed) {
-        return "v"; // Faster Run Speed
+        return "Faster"; // Faster Run Speed
     } else if (guessedChar.RunSpeed === randChar.RunSpeed) {
-        return "="; // Same Run Speed
+        return "equal"; // Same Run Speed
     }
 }
 
 function OOSSpeedCheck(guessedChar) {
     if (guessedChar.OOSSpeed > randChar.OOSSpeed) {
-        return "^"; // Faster OOS option
+        return "Faster"; // Faster OOS option
     } else if (guessedChar.OOSSpeed < randChar.OOSSpeed) {
-        return "v"; // Slower OOS option
+        return "Slower"; // Slower OOS option
     } else if (guessedChar.OOSSpeed === randChar.OOSSpeed) {
-        return "="; // Same OOS option speed
+        return "equal"; // Same OOS option speed
+    }
+}
+
+function FirstGameCheck(guessedChar) {
+    if (guessedChar.FirstGame > randChar.FirstGame) {
+        return "Earlier"; // Later first game
+    } else if (guessedChar.FirstGame < randChar.FirstGame) {
+        return "Later"; // earlier first game
+    } else if (guessedChar.FirstGame === randChar.FirstGame) {
+        return "equal"; // Same game
     }
 }

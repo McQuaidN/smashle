@@ -49,8 +49,20 @@ function submitButton(){
     if (counter == 5){
     
         textbox.disabled = true;
-        document.getElementById("errors").innerText = "You Lost. The character was " + randChar.Name;
-        alert("The character was: " + randChar.Name + ". Try again by refreshing the page.");
+        document.getElementById("errors").innerText = "You Lost. The character was " + randChar.Name + "\nRefresh the page to try again!";
+        var popup = document.getElementById("popup");
+        var popupText = document.getElementById("popuptext")
+        popupText.innerHTML = "<h1 align=\"center\">Nice Try!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
+        popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>";
+        popup.style.display = "block";
+        form.removeEventListener('submit', function(){
+            console.log("you lost. idk what to put here");
+        });
+        window.onclick = function(event) {
+            if (event.target == popup) {
+              popup.style.display = "none";
+            }
+        }
     }
 }
 
@@ -115,16 +127,16 @@ function newRow(character){
         oosSpeedCell.style.backgroundColor = "green";
 
         textbox.disabled = true;
-        document.getElementById("errors").innerText = "You Won!";
+        document.getElementById("errors").innerText = "You Won! Refresh the page to play again.";
         var popup = document.getElementById("popup");
         var popupText = document.getElementById("popuptext")
-        popupText.innerHTML = "<p>You won! The character was: " + randChar.image + "</p>";
-        popupText.innerHTML += "<p>(" + randChar.Name + ")</p>"
+        popupText.innerHTML = "<h1 align=\"center\">You won!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
+        popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>"
         if (counter == 1){
-            popupText.innerHTML += "<p>First Try!</p>";
+            popupText.innerHTML += "<p align=\"center\">First Try!</p>";
         }
         else{
-            popupText.innerHTML += "<p>It took " + counter + " tries </p>";
+            popupText.innerHTML += "<p align=\"center\">It took " + counter + " tries </p>";
         }
         popup.style.display = "block";
         form.removeEventListener('submit', function(){
@@ -134,7 +146,7 @@ function newRow(character){
             if (event.target == popup) {
               popup.style.display = "none";
             }
-          }
+        }
     }
 }
 

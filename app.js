@@ -7,7 +7,7 @@ var form = document.getElementById('mainForm');
 var textbox = document.getElementById('tbxCharacter');
 let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
-console.log(randChar.Name)
+//console.log(randChar.Name)
 var guessedChar;
 var counter = 0;
 
@@ -130,13 +130,14 @@ function newRow(character){
         document.getElementById("errors").innerText = "You Won! Refresh the page to play again.";
         var popup = document.getElementById("popup");
         var popupText = document.getElementById("popuptext")
+        popupText.style.backgroundColor = "green"
         popupText.innerHTML = "<h1 align=\"center\">You won!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
         popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>"
         if (counter == 1){
             popupText.innerHTML += "<p align=\"center\">First Try!</p>";
         }
         else{
-            popupText.innerHTML += "<p align=\"center\">It took " + counter + " tries </p>";
+            popupText.innerHTML += "<p align=\"center\">It took " + counter + " tries.</p>";
         }
         popup.style.display = "block";
         form.removeEventListener('submit', function(){

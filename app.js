@@ -7,9 +7,10 @@ var form = document.getElementById('mainForm');
 var textbox = document.getElementById('tbxCharacter');
 let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
-//console.log(randChar.Name)
+console.log(randChar.Name)
 var guessedChar;
 var counter = 0;
+var resultsString = "\n";
 
 // Makes it easier to compare strings
 for (let i=0; i < characters.length; i++){
@@ -46,7 +47,7 @@ function submitButton(){
         document.getElementById("errors").innerText = "Invalid Character";
     }
     textbox.value = ''; // clear the textbox for a cleaner UX
-    if (counter == 5){
+    if (counter == 5 & flag == false){
     
         textbox.disabled = true;
         document.getElementById("errors").innerText = "You Lost. The character was " + randChar.Name + "\nRefresh the page to try again!";
@@ -83,27 +84,27 @@ function newRow(character){
     // Fills those cells
     nameCell.innerHTML = character.image;
     tierCell.innerText = TierCheck(character);
-    if (TierCheck(character) == "same!"){
+    if (tierCell.innerText == "same!"){
         tierCell.style.backgroundColor = "green";
     }
     fallSpeedCell.innerText = FallSpeedCheck(character);
-    if (FallSpeedCheck(character) == "same!"){
+    if (fallSpeedCell.innerText == "same!"){
         fallSpeedCell.style.backgroundColor = "green";
     }
     weightCell.innerText = WeightCheck(character);
-    if (WeightCheck(character) == "same!"){
+    if (weightCell.innerText == "same!"){
         weightCell.style.backgroundColor = "green";
     }
     runSpeedCell.innerText = RunSpeedCheck(character);
-    if (RunSpeedCheck(character) == "same!"){
+    if (runSpeedCell.innerText == "same!"){
         runSpeedCell.style.backgroundColor = "green";
     }
     oosSpeedCell.innerText = OOSSpeedCheck(character);
-    if (OOSSpeedCheck(character) == "same!"){
+    if (oosSpeedCell.innerText == "same!"){
         oosSpeedCell.style.backgroundColor = "green";
     }
     firstGameCell.innerText = FirstGameCheck(character);
-    if (FirstGameCheck(character) == "same!"){
+    if (firstGameCell.innerText == "same!"){
         firstGameCell.style.background = "green";
     }
 
@@ -117,7 +118,9 @@ function newRow(character){
     row.appendChild(firstGameCell);
     table.appendChild(row);
 
-    // Special table formatting for when you win
+    resultsString += "\n";
+
+    // Formats table and shows a modal popup when you win
     if (guessedChar === randChar){
         nameCell.style.backgroundColor = "green";
         tierCell.style.backgroundColor = "green";
@@ -139,9 +142,11 @@ function newRow(character){
         else{
             popupText.innerHTML += "<p align=\"center\">It took " + counter + " tries.</p>";
         }
+        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+        twttr.widgets.load()
         popup.style.display = "block";
         form.removeEventListener('submit', function(){
-            console.log("you won. idk what to put here")
+            console.log("you won. idk what to put here but I don't like having an empty function.")
         });
         window.onclick = function(event) {
             if (event.target == popup) {
@@ -149,65 +154,85 @@ function newRow(character){
             }
         }
     }
+
+    console.log(resultsString);
 }
 
 // Functions to check values
 function TierCheck(guessedChar) {
     if (guessedChar.Tier > randChar.Tier) {
+        resultsString += "🔼";
         return "Higher";
     } else if (guessedChar.Tier < randChar.Tier) {
+        resultsString += "🔽";
         return "Lower";
     } else if (guessedChar.Tier === randChar.Tier) {
+        resultsString += "✅";
         return "same!";
     }
 }
 
 function FallSpeedCheck(guessedChar) {
     if (guessedChar.FallSpeed > randChar.FallSpeed) {
+        resultsString += "🔽";
         return "Slower"; // Slower Fall Speed
     } else if (guessedChar.FallSpeed < randChar.FallSpeed) {
+        resultsString += "🔼";
         return "Faster"; // Faster Fall Speed
     } else if (guessedChar.FallSpeed === randChar.FallSpeed) {
+        resultsString += "✅";
         return "same!"; // Same Fall Speed
     }
 }
 
 function WeightCheck(guessedChar) {
     if (guessedChar.Weight > randChar.Weight) {
+        resultsString += "🔽";
         return "Lighter"; // Lighter
     } else if (guessedChar.Weight < randChar.Weight) {
+        resultsString += "🔼";
         return "Heavier"; // Heavier
     } else if (guessedChar.Weight === randChar.Weight) {
+        resultsString += "✅";
         return "same!"; // Same Weight
     }
 }
 
 function RunSpeedCheck(guessedChar) {
     if (guessedChar.RunSpeed > randChar.RunSpeed) {
+        resultsString += "🔽";
         return "Slower"; // Slower Run Speed
     } else if (guessedChar.RunSpeed < randChar.RunSpeed) {
+        resultsString += "🔼";
         return "Faster"; // Faster Run Speed
     } else if (guessedChar.RunSpeed === randChar.RunSpeed) {
+        resultsString += "✅";
         return "same!"; // Same Run Speed
     }
 }
 
 function OOSSpeedCheck(guessedChar) {
     if (guessedChar.OOSSpeed > randChar.OOSSpeed) {
+        resultsString += "🔼";
         return "Faster"; // Faster OOS option
     } else if (guessedChar.OOSSpeed < randChar.OOSSpeed) {
+        resultsString += "🔽";
         return "Slower"; // Slower OOS option
     } else if (guessedChar.OOSSpeed === randChar.OOSSpeed) {
+        resultsString += "✅";
         return "same!"; // Same OOS option speed
     }
 }
 
 function FirstGameCheck(guessedChar) {
     if (guessedChar.FirstGame > randChar.FirstGame) {
+        resultsString += "⏩";
         return "Earlier"; // Later first game
     } else if (guessedChar.FirstGame < randChar.FirstGame) {
+        resultsString += "⏩";
         return "Later"; // earlier first game
     } else if (guessedChar.FirstGame === randChar.FirstGame) {
+        resultsString += "✅";
         return "same!"; // Same game
     }
 }

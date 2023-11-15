@@ -47,7 +47,7 @@ function submitButton(){
         document.getElementById("errors").innerText = "Invalid Character";
     }
     textbox.value = ''; // clear the textbox for a cleaner UX
-    if (counter == 5 & flag == false){
+    if (counter == 5 & guessedChar != randChar){
     
         textbox.disabled = true;
         document.getElementById("errors").innerText = "You Lost. The character was " + randChar.Name + "\nRefresh the page to try again!";
@@ -56,6 +56,8 @@ function submitButton(){
         popupText.innerHTML = "<h1 align=\"center\">Nice Try!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
         popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>";
         popup.style.display = "block";
+        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+        twttr.widgets.load();
         form.removeEventListener('submit', function(){
             console.log("you lost. idk what to put here");
         });
@@ -142,6 +144,10 @@ function newRow(character){
         else{
             popupText.innerHTML += "<p align=\"center\">It took " + counter + " tries.</p>";
         }
+        if (counter == 5){
+            popupText.innerHTML += "<h1 align=\"center\">CLUTCHBOX</h1>";
+            resultsString += "\n**CLUTCHBOX**\n";
+        }
         popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
         twttr.widgets.load()
         popup.style.display = "block";
@@ -154,8 +160,6 @@ function newRow(character){
             }
         }
     }
-
-    console.log(resultsString);
 }
 
 // Functions to check values
